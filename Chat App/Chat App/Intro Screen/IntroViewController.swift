@@ -25,11 +25,11 @@ class IntroViewController: UIViewController {
     
     //MARK: -  IB Action
     @IBAction private func loginBtnTapped(_ sender: UIButton) {
-        self.navigator.goToLoginVc()
+        self.navigator.pushToLoginVc()
     }
     
     @IBAction private func registerBtnTapped(_ sender: UIButton) {
-        self.navigator.goToRegisterVc()
+        self.navigator.pushToRegisterVc()
     }
 
 

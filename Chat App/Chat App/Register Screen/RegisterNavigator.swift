@@ -18,7 +18,7 @@ final class RegisterNavigator {
         controller = viewController
     }
     
-    func goBack() {
+    func popVC() {
         controller.navigationController?.popViewController(animated: true)
     }
 }

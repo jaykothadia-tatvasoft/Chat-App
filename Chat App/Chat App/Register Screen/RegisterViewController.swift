@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController {
     
     //MARK: - IB Action
     @IBAction private func backBtnTapped(_ sender: UIButton) {
-        navigator.goBack()
+        navigator.popVC()
     }
     
     

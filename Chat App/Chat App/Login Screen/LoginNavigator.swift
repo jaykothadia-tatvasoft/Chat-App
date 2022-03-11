@@ -18,7 +18,7 @@ final class LoginNavigator {
         controller = viewController
     }
     
-    func goBack() {
+    func popVC() {
         controller.navigationController?.popViewController(animated: true)
     }
 }

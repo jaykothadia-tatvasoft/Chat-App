@@ -18,12 +18,12 @@ final class IntroNavigator {
         controller = viewController
     }
     
-    func goToLoginVc() {
+    func pushToLoginVc() {
         let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         controller.navigationController?.pushViewController(destinationVC, animated: true)
     }
     
-    func goToRegisterVc() {
+    func pushToRegisterVc() {
         let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
         controller.navigationController?.pushViewController(destinationVC, animated: true)
     }
