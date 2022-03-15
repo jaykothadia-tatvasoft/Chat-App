@@ -22,7 +22,7 @@ class IntroViewController: UIViewController {
         
         self.navigationController?.isNavigationBarHidden = true
     }
-    
+
     //MARK: -  IB Action
     @IBAction private func loginBtnTapped(_ sender: UIButton) {
         self.navigator.pushToLoginVc()
