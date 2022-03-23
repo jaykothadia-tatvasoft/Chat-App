@@ -29,4 +29,18 @@ extension UITextField {
         self.leftView = paddingView
         self.leftViewMode = .always
     }
+    
+    public func withRoundCorners() {
+        self.borderStyle = .none
+        
+        self.layer.cornerRadius = self.layer.frame.size.height / 2
+        
+        self.layer.borderWidth = 0.25
+        self.layer.borderColor = UIColor.white.cgColor
+        
+        //left text padding
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
 }

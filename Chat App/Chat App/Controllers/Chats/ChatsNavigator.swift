@@ -27,4 +27,13 @@ final class ChatsNavigator {
             }
         }
     }
+    
+    func pushToConversationVC(with user: UserModel?) {
+        guard let user = user else {
+            return
+        }
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ConversationViewController") as! ConversationViewController
+        vc.receiverUser = user
+        self.viewController.navigationController?.pushViewController(vc, animated: true)
+    }
 }
